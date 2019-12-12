@@ -142,14 +142,7 @@ html, body {
     font-size: 1.3em;
     }
     
-    .boxes () {
-      height: 25%;
-      width: 50%;
-    }
     
-    .font () {
-      font-family: 'Yeseva One', cursive;
-    }
     
     .image {
       display: flex;
@@ -164,7 +157,7 @@ html, body {
     .top-section {
       display: flex;
       background-color: #FF003C;
-      width: @boxes();
+      width: 50%;
       margin: 0 auto;
       border: black 4px solid;
       
@@ -173,18 +166,19 @@ html, body {
     .education {
       background-color: #FABE28;
       display: flex;
-      width: @boxes ();
+      width: 50%;
       margin: 0 auto;
       border: black 4px solid;
-        .edutext {
-        justify-content: center;
-        font-size: 1.3em;
-      }
+    }
+ 
+    .edutext {
+      justify-content: center;
+      font-size: 1.3em;
     }
     
     .experience {
       background-color: #FABE28;
-      width: @boxes ();
+      width: 50%;
       margin: 0 auto;
       border: 4px black solid;
     }
@@ -196,15 +190,21 @@ html, body {
     
     .skills {
       background-color: #00C176;
-      width: @boxes ();
+      width: 50%;
       margin: 0 auto;
       border: 4px black solid;
-        .skillstext {
+    }
+    .skillstext {
         font-size: 1rem;
       }
     
+
     .contact {
       font-size: 1rem;
+      background-color: #00C176;
+      width: 50%;
+      margin: 0 auto;
+      border: 4px black solid;
     }
     
 
