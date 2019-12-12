@@ -54,9 +54,18 @@ table {
 }
 
 html, body {
-	height: 100%;
-	background-color: #F7EAC0;
-	font-size: 1.3em;
+height: 100%;
+background-color: #F7EAC0;
+font-size: 1.3em;
+}
+
+.boxes () {
+	height: 25%;
+	width: 50%;
+}
+
+.font () {
+	font-family: 'Yeseva One', cursive;
 }
 
 .image {
@@ -72,50 +81,44 @@ html, body {
 .top-section {
 	display: flex;
 	background-color: #FF003C;
-	width: 50%;
+	width: @boxes();
 	margin: 0 auto;
 	border: black 4px solid;
 	
 }
 
-.main {
-	background-color: #FABE28;
-	padding: 2.5%;
-	margin-left: 25%;
-	width: 35%;
-	height: 100%;
-	margin-top: 5%;
-	border: 2px black solid;
-	display: inline-block;
-	font-size: 1.3em;
-	padding-top: 5%;
-}
-
-.maintext {
-	justify-content: center;
-	font-size: 1.3em;
-}
-
 .education {
-	padding-bottom: 5%;
+	background-color: #FABE28;
+	display: flex;
+	width: @boxes ();
+	margin: 0 auto;
+	border: black 4px solid;
+		.edutext {
+		justify-content: center;
+		font-size: 1.3em;
+	}
+}
+
+.experience {
+	background-color: #FABE28;
+	width: @boxes ();
+	margin: 0 auto;
+	border: 4px black solid;
 }
 
 ul {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	list-style-type: square;
 }
 
-.sidebar {
+.skills {
 	background-color: #00C176;
-	width: 50%;
-	height: 50%;
+	width: @boxes ();
+	margin: 0 auto;
 	border: 4px black solid;
-	float: left;
-	font-size: 1.3em;
-
-.sidetext {
-	font-size: 1.3em;
-}
+		.skillstext {
+		font-size: 1.1em;
+	}
 
 .contact {
 	font-size: 1.3em;
@@ -127,13 +130,13 @@ h1 {
 }
 h2 {
 	font-size: 2em;
-	font-family: 'Yeseva One', cursive;
+	font-family: @font ();
 }
 h3 {
 	font-size: 1.5em;
-	font-family: 'Yeseva One', cursive;
+	font-family: @font ();
 }
 p {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-family: 'Dosis', sans-serif;
 }
